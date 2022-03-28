@@ -1,6 +1,6 @@
 header {
     position: fixed;
-    background: rgb(27, 228, 111);
+    background: #319795;
     top: 0;
     left: 0;
     padding: 0 30px;
@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-    color: green;
+    color: white;
 }
 
 #up {
@@ -45,8 +45,14 @@ a:hover {
     background-color: aqua;
 }
 
+input[type=list]{
+    margin-left: 650px;
+}
+
+
+
 body {
-    background-color: aqua;
+    background-color: #EDF2F3;
     padding-top: 100px;
     padding-right: 15px;
     margin-left: 280px;
@@ -54,7 +60,7 @@ body {
 }
 
 .tabel {
-    background-color: rgb(245, 245, 97);
+    background-color: #707572;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -72,7 +78,7 @@ body {
     top: 0;
     /* posisi paling atas pada layar device */
     left: 0;
-    background-color: rgb(49, 112, 184);
+    background-color: #C4C4C4;
     margin-top: 70px;
 }
 
