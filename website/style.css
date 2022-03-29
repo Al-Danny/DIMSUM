@@ -165,8 +165,15 @@ p{
   text-align: justify;
 }
 
-}
-
 .berita h2{
   text-align: center;
 }
+
+.berita h4{
+  margin-left: 60px;
+}
+
+.berita button{
+  margin-left: 60px;
+}
+
