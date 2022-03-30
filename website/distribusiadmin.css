@@ -192,12 +192,13 @@ form div.form-action-buttons {
     text-align: right;
 }
 
-a {
+
+/*a {
     cursor: pointer;
     text-decoration: underline;
     color: #0000ee;
     margin-right: 4px;
-}
+}*/
 
 label.validation-error {
     color: red;
