@@ -45,24 +45,24 @@
     </div>
 
     <table class="tabel">
+        <h4 align="center">FORM CRUD DATA DISTRIBUSI SEMBAKO</h4>
         <div class="sembako-form">
             <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                 <div>
-                    <label>No</label>
-                    <input type="text" name="No" id="No">
+                    <label>ID Sembako</label><label class="validation-error hide" id="IDSembakoValidationError">Harus Diisi.</label>
+                    <input type="text" name="IDSembako" id="IDSembako">
                 </div>
                 <div>
-                    <label>Nama Sembako</label><label class="validation-error hide" id="NamaSembakoValidationError">Harus Diisi.</label>
+                    <br>
+                    <label>Nama Sembako</label>
                     <input type="text" name="NamaSembako" id="NamaSembako">
                 </div>
                 <div>
-                    <label>Jumlah Stok</label>
-                    <input type="text" name="JumlahStok" id="JumlahStok">
+                    <br>
+                    <label>Rata-Rata Harga</label>
+                    <input type="text" name="Rata" id="Rata">
                 </div>
-                <div>
-                    <label>Provinsi</label>
-                    <input type="text" name="Provinsi" id="Provinsi">
-                </div>
+
                 <div class="form-action-buttons">
                     <input type="submit" value="Submit">
                 </div>
@@ -73,11 +73,12 @@
             <table class="list" id="sembakoList">
                 <thead>
                     <tr>
-                        <th>No</th>
-                        <th>ID Sembako</th>
+                        <th>ID_Sembako</th>
+
                         <th>Nama Sembako</th>
-                        <th>Jumlah Stok</th>
-                        <th>Provinsi</th>
+                        <th>Rata-Rata Harga</th>
+                        <th>Tindakan</th>
+
                     </tr>
                 </thead>
                 <tbody>

@@ -13,10 +13,10 @@ function onFormSubmit() {
 
 function readFormData() {
     var formData = {};
-    formData["No"] = document.getElementById("No").value;
+    formData["IDSembako"] = document.getElementById("IDSembako").value;
     formData["NamaSembako"] = document.getElementById("NamaSembako").value;
-    formData["JumlahStok"] = document.getElementById("JumlahStok").value;
-    formData["Provinsi"] = document.getElementById("Provinsi").value;
+    formData["Rata"] = document.getElementById("Rata").value;
+
     return formData;
 }
 
@@ -24,39 +24,38 @@ function insertNewRecord(data) {
     var table = document.getElementById("sembakoList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
     cell1 = newRow.insertCell(0);
-    cell1.innerHTML = data.No;
+    cell1.innerHTML = data.IDSembako;
     cell2 = newRow.insertCell(1);
     cell2.innerHTML = data.NamaSembako;
     cell3 = newRow.insertCell(2);
-    cell3.innerHTML = data.JumlahStok;
+    cell3.innerHTML = data.Rata;
+
     cell4 = newRow.insertCell(3);
-    cell4.innerHTML = data.Provinsi;
-    cell5 = newRow.insertCell(4);
-    cell5.innerHTML = `<a onClick="onEdit(this)">Edit</a>
+    cell4.innerHTML = `<a onClick="onEdit(this)">Edit</a>
                        <a onClick="onDelete(this)">Hapus</a>`;
 }
 
 function resetForm() {
-    document.getElementById("No").value = "";
+    document.getElementById("IDSembako").value = "";
     document.getElementById("NamaSembako").value = "";
-    document.getElementById("JumlahStok").value = "";
-    document.getElementById("Provinsi").value = "";
+    document.getElementById("Rata").value = "";
+
     selectedRow = null;
 }
 
 function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
-    document.getElementById("No").value = selectedRow.cells[0].innerHTML;
+    document.getElementById("IDSembako").value = selectedRow.cells[0].innerHTML;
     document.getElementById("NamaSembako").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("JumlahStok").value = selectedRow.cells[2].innerHTML;
-    document.getElementById("Provinsi").value = selectedRow.cells[3].innerHTML;
+    document.getElementById("Rata").value = selectedRow.cells[2].innerHTML;
+
 }
 
 function updateRecord(formData) {
-    selectedRow.cells[0].innerHTML = formData.No;
+    selectedRow.cells[0].innerHTML = formData.IDSembako;
     selectedRow.cells[1].innerHTML = formData.NamaSembako;
-    selectedRow.cells[2].innerHTML = formData.JumlahStok;
-    selectedRow.cells[3].innerHTML = formData.Provinsi;
+    selectedRow.cells[2].innerHTML = formData.Rata;
+
 }
 
 function onDelete(td) {
@@ -69,13 +68,13 @@ function onDelete(td) {
 
 function validate() {
     isValid = true;
-    if (document.getElementById("NamaSembako").value == "") {
+    if (document.getElementById("IDSembako").value == "") {
         isValid = false;
-        document.getElementById("NamaSembakoValidationError").classList.remove("hide");
+        document.getElementById("IDSembakoValidationError").classList.remove("hide");
     } else {
         isValid = true;
-        if (!document.getElementById("NamaSembakoValidationError").classList.contains("hide"))
-            document.getElementById("NamaSembakoValidationError").classList.add("hide");
+        if (!document.getElementById("IDSembakoValidationError").classList.contains("hide"))
+            document.getElementById("IDSembakoValidationError").classList.add("hide");
     }
     return isValid;
 }
