@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <title>DIMSUM</title>
+    <link rel="stylesheet" href="distribusiadmin.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="/logo fp uts.png" alt="">
+        <nav class="atas">
+            <ul>
+                <li><a id="up" class="active" href="awal.html">KELUAR</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrap">
+        <div class="sidebar">
+            <h2>Data Sembako</h2>
+            <ul>
+                <li><a href="#">Beras atau Sagu</a></li>
+                <li><a href="#">Minyak Goreng atau Mentega</a></li>
+                <li><a href="#">Gas Elpiji atau Minyak Tanah</a></li>
+                <li><a href="#">Susu</a></li>
+                <li><a href="#">Jagung</a></li>
+                <li><a href="#">Gula Pasir</a></li>
+                <li><a href="#">Daging</a></li>
+                <li><a href="#">Telur</a></li>
+                <li><a href="#">Garam</i></a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <table class="tabel">
+        <div class="sembako-form">
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div>
+                    <label>No</label>
+                    <input type="text" name="No" id="No">
+                </div>
+                <div>
+                    <label>Nama Sembako</label><label class="validation-error hide" id="NamaSembakoValidationError">Harus Diisi.</label>
+                    <input type="text" name="NamaSembako" id="NamaSembako">
+                </div>
+                <div>
+                    <label>Jumlah Stok</label>
+                    <input type="text" name="JumlahStok" id="JumlahStok">
+                </div>
+                <div>
+                    <label>Provinsi</label>
+                    <input type="text" name="Provinsi" id="Provinsi">
+                </div>
+                <div class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <br/>
+        <div class="sembako-table">
+            <table class="list" id="sembakoList">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>ID Sembako</th>
+                        <th>Nama Sembako</th>
+                        <th>Jumlah Stok</th>
+                        <th>Provinsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </table>
+    <script src="distribusiadmin.js"></script>
+</body>
+
+</html>
