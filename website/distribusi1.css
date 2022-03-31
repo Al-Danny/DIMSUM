@@ -35,9 +35,15 @@ a:hover {
 #up {
     height: 60px;
     line-height: 60px;
-    padding: 0 20px;
     text-decoration: none;
     display: block;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+}
+
+#up.a:hover {
+    color: black;
 }
 
 .isi {
