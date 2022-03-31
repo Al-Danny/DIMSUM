@@ -45,7 +45,7 @@ a:hover {
     background-color: aqua;
 }
 
-input[type=list]{
+input[type=list] {
     margin-left: 650px;
 }
 
@@ -116,6 +116,11 @@ body {
 
 .wrap.sidebar ul li a:hover {
     background: rgb(172, 235, 247);
+}
+
+iframe {
+    align-items: center;
+    text-align: center;
 }
 
 
