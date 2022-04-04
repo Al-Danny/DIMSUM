@@ -1,0 +1,29 @@
+.container-fluid{
+    background: #319795;
+    padding: 2px 40px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+.navbar-nav{
+    position: absolute;
+    left: 85%;
+    transform: translatex(-50%);
+}
+
+.carousel{
+    background: grey;
+    z-index: -99999;
+}
+
+#navbarNav{
+    background-color: aliceblue;
+}
+
+h3{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+    background-color: blueviolet;
+    border-radius: 20px;
+}
