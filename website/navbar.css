@@ -2,7 +2,7 @@
     background: #319795;
     padding: 2px 40px;
     margin-top: -8px;
-    margin-bottom: -8px;
+    margin-bottom: -6px;
 }
 
 .navbar-nav{
@@ -26,4 +26,13 @@ h3{
     padding: 20px 20px 20px 20px;
     background-color: blueviolet;
     border-radius: 20px;
+}
+
+.masuk{
+    background-color: #C4C4C4;
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2%;
+    border-radius: 4%;
 }

@@ -1,0 +1,60 @@
+.login-page{
+	background-color: #319795;
+}
+
+.login-box{
+    background-color: rgb(80, 83, 81);
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 530px;
+    margin-right: 530px;
+    padding: 15px;
+}
+
+h1{
+    text-align: center;
+}
+
+input[type=text]{
+    padding: 2px;
+}
+
+input[type=password]{
+    padding: 2px;
+}
+
+.col {
+    justify-content: center;
+    margin: 5px;
+}
+
+.col-4{
+    background-color: rgb(251, 251, 251);
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.col-md-12 {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.mb-1{
+    text-align: center;
+}
+
+.logo{
+	background-color: #319795;
+	border-radius: 10px;
+	box-shadow: 0 3px;
+}
+
+.btn{
+	color: black;
+}
+
+.btn:hover{
+	background-color: grey;
+}
