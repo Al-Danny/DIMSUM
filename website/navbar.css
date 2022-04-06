@@ -1,3 +1,7 @@
+body{
+    overflow: visible;
+}
+
 .container-fluid{
     background: #319795;
     padding: 2px 40px;
@@ -49,4 +53,8 @@ h3{
     margin-right: 30%;
     padding: 2%;
     border-radius: 4%;
+}
+
+.p{
+    text-align: center;
 }
