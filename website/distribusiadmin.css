@@ -15,6 +15,15 @@ img.logo {
     float: left;
 }
 
+button {
+    width: 90%;
+    height: 30px;
+}
+
+button:hover {
+    color: #818181;
+}
+
 nav {
     float: right;
 }
