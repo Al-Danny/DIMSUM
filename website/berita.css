@@ -3,12 +3,10 @@ body{
 }
 
 .container-fluid{
-    position: fixed;
     background: #319795;
     padding: 2px 40px;
     margin-top: -8px;
     margin-bottom: -6px;
-    z-index: 99999;
 }
 
 .navbar-nav{
