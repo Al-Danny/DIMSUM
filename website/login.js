@@ -8,23 +8,18 @@ function login() {
             title: "Good job!",
             text: "You clicked the button!",
             icon: "success",
-          });
-        window.location = "distribusi1.html"; // Redirecting to other page.
+        });
+        window.location = "distribusi1admin.html"; // Redirecting to other page.
         return false;
-    }
-    else if(username == "" || password == ""){
+    } else if (username == "" || password == "") {
         swal("Username atau Pasword Tidak boleh Kosong");
-    }
-    else if(username != "admin" && password != "admin123"){
+    } else if (username != "admin" && password != "admin123") {
         swal("Username dan Pasword Salah Min");
-    }
-    else if(username != "admin"){
+    } else if (username != "admin") {
         swal("Username Salah");
-    }
-    else if(password != "admin123"){
+    } else if (password != "admin123") {
         swal("Pasword Salah");
-    }
-    else {
+    } else {
         attempt--; // Decrementing by one.
         swal("You have left " + attempt + " attempt;");
         // Disabling fields after 3 attempts.
