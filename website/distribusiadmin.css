@@ -41,6 +41,13 @@ a:hover {
     color: white;
 }
 
+h5 {
+    background: green;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 #up {
     height: 60px;
     line-height: 60px;
@@ -62,7 +69,8 @@ body {
     background-color: #EDF2F3;
     padding-top: 100px;
     padding-right: 15px;
-    margin-left: 280px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 15px;
 }
 
@@ -87,44 +95,6 @@ body {
     left: 0;
     background-color: #C4C4C4;
     margin-top: 70px;
-}
-
-.wrap.sidebar {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 10px;
-    color: #818181;
-    display: block;
-}
-
-.wrap.sidebar.h2 {
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.wrap.sidebar ul li {
-    padding: -5px;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    text-align: left;
-    list-style: none;
-}
-
-.wrap.sidebar ul li a {
-    display: block;
-    color: rgb(17, 17, 17);
-    line-height: 1px;
-}
-
-.wrap.sidebar ul li a.fas {
-    width: 5px;
-    font-style: normal;
-}
-
-.wrap.sidebar ul li a:hover {
-    background: rgb(172, 235, 247);
 }
 
 .sembakoform {
